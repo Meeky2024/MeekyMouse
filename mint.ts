@@ -4,7 +4,7 @@ import { createUmi } from '@metaplex-foundation/umi-bundle-defaults';
 import { mplCandyMachine } from "@metaplex-foundation/mpl-candy-machine";
 
 import secret from './guideSecret.json';
-const QuickConnection  = 'https://blissful-few-daylight.solana-mainnet.quiknode.pro/9c3deabd9684d01e01ce9a95957eb601491523f3/'
+const QuickConnection  = ''
 const umi = createUmi(QuickConnection);
 const userWallet = umi.eddsa.createKeypairFromSecretKey(new Uint8Array(secret));
 const userWalletSigner = createSignerFromKeypair(umi, userWallet);
