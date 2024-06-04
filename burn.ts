@@ -5,7 +5,7 @@ import { mplCandyMachine } from "@metaplex-foundation/mpl-candy-machine";
 import { Connection, PublicKey, Keypair, TransactionMessage, VersionedTransaction } from "@solana/web3.js"
 import { createBurnCheckedInstruction, createMint,TOKEN_PROGRAM_ID, getAssociatedTokenAddress } from "@solana/spl-token";
 import secret from './guideSecret.json';
-const QuickConnection  = 'https://blissful-few-daylight.solana-mainnet.quiknode.pro/9c3deabd9684d01e01ce9a95957eb601491523f3/'
+const QuickConnection  = 'https:///'
 const umi = createUmi(QuickConnection);
 const SOLANA_CONNECTION = new Connection(QuickConnection);
 const userWallet = umi.eddsa.createKeypairFromSecretKey(new Uint8Array(secret));
